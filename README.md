@@ -122,16 +122,28 @@ educational-data-mining/
 - Jupyter Notebook
 - Git and GitHub
 
+
 ## Reproducing the Analysis
 
 1. Clone this repository.
-2. Download OULAD from the [official dataset source](https://analyse.kmi.open.ac.uk/open_dataset).
-3. Place the required raw dataset files in the local `data/raw/` directory.
-4. Install the Python dependencies used by the notebooks.
-5. Open the notebooks in Jupyter Notebook or VS Code.
-6. Run the notebooks in order, following any documented data preparation steps.
+2. Download the [Open University Learning Analytics Dataset (OULAD)](https://analyse.kmi.open.ac.uk/open_dataset).
+3. Place the required raw CSV files in the local `data/raw/` directory.
+4. Create and activate a Python virtual environment:
 
-The notebooks document the data exploration, feature engineering, model evaluation, and interpretation process.
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   ```
+
+5. Install the required dependencies:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+6. Open the notebooks in Jupyter Notebook or VS Code and run them in order, following any documented data preparation steps.
+
+The notebooks document data exploration, feature engineering, model evaluation, and interpretation.
 
 ## Conclusion
 
